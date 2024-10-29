@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание занятий</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 100px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 3px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            transition: background-color 0.3s; /* Плавный переход цвета */
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        .daych {
+            background-color: #e9ecef;
+            font-weight: bold;
+            text-align: center;
+        }
+        .daynch {
+            background-color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        
+        td:hover {
+            background-color: #d1e7dd; /* Цвет при наведении */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Расписание занятий</h1>
+
+<table>
+    <tr>
+        <th>День</th>
+        <th>Предмет</th>
+        <th>Время</th>
+    </tr>
+    <tr>
+        <td class="daynch" rowspan="2">Понедельник</td>
+        <td>Базы данных</td>
+        <td>11:50 - 13:20</td>
+    </tr>
+    <tr>
+        <td>Базы данных</td>
+        <td>13:30 - 15:00</td>
+    </tr>
+    <tr>
+        <td class="daych" rowspan="4">Вторник</td>
+        <td>Правоведение</td>
+        <td>15:10 - 16:40</td>
+    </tr>
+    <tr>
+        <td>Предметно-ориентированное программирование</td>
+        <td>16:50 - 18:20</td>
+    </tr>
+    <tr>
+        <td>Предметно-ориентированное программирование</td>
+        <td>18:30 - 20:00</td>
+    </tr>
+    <tr>
+        <td>Предметно-ориентированное программирование</td>
+        <td>20:10 - 21:30</td>
+    </tr>
+    <tr>
+        <td class="daynch" rowspan="2">Среда</td>
+        <td>Веб-программирование</td>
+        <td>08:30 - 10:00</td>
+    </tr>
+    <tr>
+        <td>Информационная безопасность и защита информации</td>
+        <td>10:10 - 11:40</td>
+    </tr>
+    <tr>
+        <td class="daych" rowspan="4">Четверг</td>
+        <td>Моделирование бизнес-процессов</td>
+        <td>10:10 - 11:40</td>
+    </tr>
+    <tr>
+        <td>Моделирование бизнес-процессов</td>
+        <td>11:50 - 13:20</td>
+    </tr>
+    <tr>
+        <td>Прикладная физическая культура и спорт</td>
+        <td>13:30 - 15:00</td>
+    </tr>
+    <tr>
+        <td>Методы машинного обучения</td>
+        <td>15:10 - 16:40</td>
+    </tr>
+    <tr>
+        <td class="daynch">Пятница</td>
+        <td class="empty">EMPTY LIST</td>
+        <td class="empty">-</td>
+    </tr>
+    <tr>
+       <td class="daych" rowspan="3">Суббота</td>
+        <td>Информационная безопасность и защита информации</td>
+        <td>08:30 - 10:00</td>
+    </tr>
+    <tr>
+        <td>Теория систем и системный анализ</td>
+        <td>11:50 - 13:20</td>
+    </tr>
+    <tr>
+        <td>Теория систем и системный анализ</td>
+        <td>13:30 - 15:00</td>
+    </tr>
+</table>
+
+<h1>Дополнительное расписание</h1>
+
+<table>
+    <tr>
+        <th>День недели</th>
+        <th>Завтрак</th>
+        <th>Спортзал</th>
+        <th>Душ</th>
+        <th>Ужин</th>
+        <th>EXTRA</th>
+    </tr>
+    <tr>
+        <td class="daynch">Понедельник</td>
+        <td>10:00 - 10:20</td>
+        <td>16:00 - 18:00</td>
+        <td>18:00</td>
+        <td>19:00</td>
+        <td>22:00 В аптеку</td>
+    </tr>
+    <tr>
+        <td class="daych">Вторник</td>
+        <td>10:00 - 10:20</td>
+        <td>-</td>
+        <td>20:30</td>
+        <td>21:00</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td class="daynch">Среда</td>
+        <td>07:40 - 08:00</td>
+        <td>13:00 - 14:30</td>
+        <td>15:00</td>
+        <td>18:00</td>
+        <td>К врачу после учебы до 14:00</td>
+    </tr>
+    <tr>
+    <td class="daych">Четверг</td>
+        <td>08:00 - 08:30</td>
+        <td>-</td>
+        <td>20:00 - 20:30</td>
+        <td>21:00</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td class="daynch">Пятница</td>
+        <td>10:00</td>
+        <td>-</td>
+        <td>20:00 - 20:30</td>
+        <td>18:00</td>
+        <td>-</td>
+    </tr>
+    <tr>
+       <td class="daych">Суббота</td>
+       <td>09:00 - 09:30</td>
+       <td>18:00 - 20:00</td>
+       <td>20:00</td>
+        <td>21:00</td>
+        <td>-</td>
+   </tr>
+
+   <tr>
+       <td class="daynch">Воскресенье</td>
+        <td>10:00</td>
+        <td>-</td>
+       <td>21:00</td>
+       <td>22:00</td>
+        <td> Отдохнуть, сделать веб-программирование, выгулять кошку </td>
+   </tr>
+
+</table>
+
+</body>
+</html>
+
